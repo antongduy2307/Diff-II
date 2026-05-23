@@ -15,6 +15,8 @@ dependencies:
   - pytest-env
   - tqdm
   - numpy
+  - matplotlib
+  - pillow
   - pytorch>=1.11.0
   - torchvision>=0.12.0
   - nvidia::cudatoolkit
@@ -31,5 +33,8 @@ dependencies:
     - datasets
     - git+https://github.com/openai/CLIP.git
     - open_clip_torch
+    - lpips
+    - openai
+    - httpx
 variables:
   CACHE_NUMBER: 0

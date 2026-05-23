@@ -28,7 +28,10 @@ processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-larg
 model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large").to(device)
 datasets = 'cub'
 shot = '10shot'
-api_key = 'sk-PYj7vLPUJVPoONpEC11994De8bAc4312842f9a7f25Ee25D4'
+api_key = os.environ.get("DIFF_II_OPENAI_API_KEY", "")
+
+if not api_key:
+    raise ValueError("Set DIFF_II_OPENAI_API_KEY before running get_suffix.py.")
 
 
 if 'cub' in datasets:

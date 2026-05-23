@@ -1,0 +1,24 @@
+.omx/
+
+# Downloaded research assets
+datasets/
+ft_ti_db/
+suffix/
+
+# Generated outputs
+inversions/
+syn/
+runs/
+wandb/
+
+# Python and environment artifacts
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Download archives
+*.zip
